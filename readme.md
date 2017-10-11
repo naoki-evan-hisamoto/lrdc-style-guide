@@ -118,7 +118,7 @@ In order to contribute to the LRDC Style Guide and experiment with it locally on
 Your forked file structure should look like this:
 
 ```
-lrdc-style-guide-master/
+lrdc-style-guide/
 ├── .gitignore
 ├── docs/
 |   ├── index.html
@@ -148,21 +148,21 @@ npm install will create a `node_modules/` folder and install the dependencies li
 
 </br>
 
-  1. Open a Terminal prompt and navigate to the `lrcd-style-guide-master/` folder.
+  1. Open a Terminal prompt and navigate to the `lrcd-style-guide/` folder.
   2. Enter `npm install` into the Terminal prompt.
-  3. Your `lrdc-style-guide-master/` folder should now contain the `node_modules/` folder.
+  3. Your `lrdc-style-guide/` folder should now contain the `node_modules/` folder.
 
 ##
 
 ### 3. You're ready to start styling!
-You now have 2 new folders inside of the `lrdc-style-guide-master/` folder.  
+You now have 2 new folders inside of the `lrdc-style-guide/` folder.  
 These are the `.git/` + `node_modules/` folders.
 </br>
 
 Your forked file structure should look like this after following steps 1 + 2 of the Local section:
 
 ```
-lrdc-style-guide-master/
+lrdc-style-guide/
 ├── .git/
 |   └── ...
 ├── .gitignore
@@ -204,19 +204,19 @@ Before you begin to edit your files, running the `gulp.watch` task will automati
 
 </br>
 
-  1. Open a Terminal prompt and navigate to the `lrdc-style-guide-master/` folder.
+  1. Open a Terminal prompt and navigate to the `lrdc-style-guide/` folder.
   2. Enter `gulp watch` into the Terminal prompt.  
 
 ##
 
 ### 2. Style Away!
-The `index.html` file in the `lrdc-style-guide-master/` folder should have automatically opened in your browser.  
+The `index.html` file in the `lrdc-style-guide/` folder should have automatically opened in your browser.  
 As you save your changes to `*.scss` files, your browser will automatically refresh to display the changes.
 
 </br>
 
 * For styling, the only files you should edit are the `*.scss` files in the `/style-guide/scss/` folder.   
-* For content, the only file you should edit is the `index.html` file in the `lrdc-style-guide-master/` folder.
+* For content, the only file you should edit is the `index.html` file in the `lrdc-style-guide/` folder.
 
 ##
 
