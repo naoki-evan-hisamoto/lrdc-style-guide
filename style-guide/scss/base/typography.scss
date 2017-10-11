@@ -6,12 +6,42 @@ $font-weight-light: 300;
 $font-weight-regular: 400;
 $font-weight-semibold: 600;
 
+//font size classes
+.f1 {
+	font-size: 6.56em;
+}
+.f2 {
+	font-size: 4.1em;	
+}
+.f3 {
+	font-size: 2.56em;	
+}
+.f4 {
+	font-size: 1.6em;
+}
+.f5 {
+	font-size: 1.4em;
+}
+.f6 {
+	font-size: 1.125em;
+}
+.f {
+	font-size: 16px;
+}
+.f7 {
+	font-size: .9em;
+}
+.f8 {
+	font-size: .8em;	
+}
+.f9 {
+	font-size: .75em;
+}
 
 // base x6.56
 h1 {
 	color: $color-text-black;
 	font-family: $font-stack;
-	font-size: 6.56em;
 	font-weight: $font-weight-extralight;
 	margin-bottom: 0;
 }
@@ -20,7 +50,6 @@ h1 {
 h2 {
 	color: $color-text-black;
 	font-family: $font-stack;
-	font-size: 4.1em;
 	font-weight: $font-weight-extralight;
 	line-height: 90%;
 	margin-bottom: 0;
@@ -31,7 +60,6 @@ h2 {
 h3 {
 	color: $color-text-black;
 	font-family: $font-stack;
-	font-size: 2.56em;
 	font-weight: $font-weight-light;
 	margin-bottom: 0;
 }
@@ -41,7 +69,6 @@ h3 {
 h4 {
 	color: $color-text-black;
 	font-family: $font-stack;
-	font-size: 1.6em;
 	font-weight: $font-weight-light;
 	margin-bottom: 0;
 }
@@ -50,7 +77,6 @@ h4 {
 h5 {
 	color: $color-text-black;
 	font-family: $font-stack;
-	font-size: 1.4em;
 	font-weight: $font-weight-regular;
 	line-height: 120%;
 	margin-bottom: 10px;
@@ -61,7 +87,6 @@ h5 {
 h6 {
 	color: $color-text-black;
 	font-family: $font-stack;
-	font-size: 1.125em;
 	font-weight: $font-weight-semibold;
 	margin-bottom: 6px;
 	// margin-bottom: .375em;
@@ -71,7 +96,6 @@ h6 {
 p {
 	color: $color-text-black;
 	font-family: $font-stack;
-	font-size: 16px;
 	font-weight: $font-weight-regular;
 	line-height: 1.5em;
 	margin-bottom: 10px;
@@ -80,7 +104,6 @@ p {
 
 // base x.9
 p.h7 {
-	font-size: .9em;
 	font-weight: $font-weight-semibold;
 	//line-height: 0em;
 	margin-bottom: 0;
@@ -88,7 +111,6 @@ p.h7 {
 
 // base x.8
 p.h8 {
-	font-size: .8em;
 	font-weight: $font-weight-semibold;
 	//line-height: 0em;
 	margin-bottom: 0;
@@ -96,7 +118,6 @@ p.h8 {
 
 // base x.75
 p.h9 {
-	font-size: .75em;
 	font-weight: $font-weight-semibold;
 	//line-height: 0em;
 	margin-bottom: 12px;
@@ -106,7 +127,6 @@ p.h9 {
 // smallcaps
 p.smallcaps {
 	color: $color-text-black;
-	font-size: .9em;
 	font-weight: $font-weight-semibold;
 	letter-spacing: .09em;
 	//line-height: 0em;
