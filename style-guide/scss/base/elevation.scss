@@ -1,0 +1,30 @@
+$elevation-base: 0 0 0 0 $color-shadow-blur, 0 0 0 0 $color-shadow-main;
+$elevation-level1: 0 0 1.75em 0 $color-shadow-blur, 0 .875em .625em -1em $color-shadow-main;
+$elevation-level2: 0 0 2em 0 $color-shadow-blur, 0 1em .75em -1em $color-shadow-main;
+$elevation-level3: 0 0 2.5em 0 $color-shadow-blur, 0 1.25em 1em -1em $color-shadow-main;
+$elevation-level4: 0 0 3.5em 0 $color-shadow-blur, 0 1.75em 1.5em -1em $color-shadow-main;
+$elevation-level5: 0 0 5.5em 0 $color-shadow-blur, 0 2.75em 2.5em -1em $color-shadow-main;
+
+.elevation-base {
+	box-shadow: $elevation-base;
+}
+
+.elevation-level1 {
+	box-shadow: $elevation-level1;
+}
+
+.elevation-level2 {
+	box-shadow: $elevation-level2;
+}
+
+.elevation-level3 {
+	box-shadow: $elevation-level3;
+}
+
+.elevation-level4 {
+	box-shadow: $elevation-level4;
+}
+
+.elevation-level5 {
+	box-shadow: $elevation-level5;
+}

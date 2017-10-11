@@ -1,0 +1,116 @@
+// typography
+
+$font-stack: 'Source Sans Pro', sans-serif;
+$font-weight-extralight: 200;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+
+
+// base x6.56
+h1 {
+	color: $color-text-black;
+	font-family: $font-stack;
+	font-size: 6.56em;
+	font-weight: $font-weight-extralight;
+	margin-bottom: 0;
+}
+
+// base x4.1
+h2 {
+	color: $color-text-black;
+	font-family: $font-stack;
+	font-size: 4.1em;
+	font-weight: $font-weight-extralight;
+	line-height: 90%;
+	margin-bottom: 0;
+}
+
+
+// base x2.56
+h3 {
+	color: $color-text-black;
+	font-family: $font-stack;
+	font-size: 2.56em;
+	font-weight: $font-weight-light;
+	margin-bottom: 0;
+}
+
+
+// base x1.6
+h4 {
+	color: $color-text-black;
+	font-family: $font-stack;
+	font-size: 1.6em;
+	font-weight: $font-weight-light;
+	margin-bottom: 0;
+}
+
+// base x1.4
+h5 {
+	color: $color-text-black;
+	font-family: $font-stack;
+	font-size: 1.4em;
+	font-weight: $font-weight-regular;
+	line-height: 120%;
+	margin-bottom: 10px;
+	// margin-bottom: .625em;
+}
+
+// base x1.125
+h6 {
+	color: $color-text-black;
+	font-family: $font-stack;
+	font-size: 1.125em;
+	font-weight: $font-weight-semibold;
+	margin-bottom: 6px;
+	// margin-bottom: .375em;
+}
+
+// base
+p {
+	color: $color-text-black;
+	font-family: $font-stack;
+	font-size: 16px;
+	font-weight: $font-weight-regular;
+	line-height: 1.5em;
+	margin-bottom: 10px;
+	// margin-bottom: .625em;
+}
+
+// base x.9
+p.h7 {
+	font-size: .9em;
+	font-weight: $font-weight-semibold;
+	//line-height: 0em;
+	margin-bottom: 0;
+}
+
+// base x.8
+p.h8 {
+	font-size: .8em;
+	font-weight: $font-weight-semibold;
+	//line-height: 0em;
+	margin-bottom: 0;
+}
+
+// base x.75
+p.h9 {
+	font-size: .75em;
+	font-weight: $font-weight-semibold;
+	//line-height: 0em;
+	margin-bottom: 12px;
+	// margin-bottom: .75em;
+}
+
+// smallcaps
+p.smallcaps {
+	color: $color-text-black;
+	font-size: .9em;
+	font-weight: $font-weight-semibold;
+	letter-spacing: .09em;
+	//line-height: 0em;
+	margin-bottom: 0;
+	opacity: .5;
+	text-transform: uppercase;
+}
