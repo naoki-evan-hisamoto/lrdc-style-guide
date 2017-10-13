@@ -1,127 +1,167 @@
+//reset browser
+* {
+	margin: 0;
+	padding: 0;
+}
 // typography
 
+$font-base: 1.2vw;
 $font-stack: 'Source Sans Pro', sans-serif;
 $font-weight-extralight: 200;
 $font-weight-light: 300;
 $font-weight-regular: 400;
 $font-weight-semibold: 600;
 
-//font size classes
-.f1 {
-	font-size: 6.56em;
-}
-.f2 {
-	font-size: 4.1em;	
-}
-.f3 {
-	font-size: 2.56em;	
-}
-.f4 {
-	font-size: 1.6em;
-}
-.f5 {
-	font-size: 1.4em;
-}
-.f6 {
-	font-size: 1.125em;
-}
-.f {
-	font-size: 16px;
-}
-.f7 {
-	font-size: .9em;
-}
-.f8 {
-	font-size: .8em;	
-}
-.f9 {
-	font-size: .75em;
+// FONT SIZE MIXIN
+@mixin font-size($size, $min, $max: false, $fallback: false) {
+	//strip units from font-base & font-size
+  $font-size-unitless: $font-base / ($font-base - $font-base + 1);
+  $size-unitless: $size / ($size - $size + 1);
+	//calculate min and max breakpoints
+  $min-breakpoint: ($min / $size-unitless) / ($font-size-unitless / 100);
+  $max-breakpoint: ($max / $size-unitless) / ($font-size-unitless /100);
+  	//set max media width for scaling 
+  @media (max-width: #{$min-breakpoint}) {
+      font-size: $min;
+    }
+  	//set min media width if max font size is defined
+  @if $max {
+    @media (min-width: #{$max-breakpoint}) {
+      font-size: $max;
+    }
+  }
+  	//call fallback if defined
+  @if $fallback {
+    font-size: $fallback;
+  }
+  	//default font size
+  font-size: $size;
 }
 
-// base x6.56
+//set base font size
+body {
+	font-size: $font-base;
+}
+//temp
+h1,h2,h3,h4,h5,h6,p {
+	background-color: #3FFFFF;
+}
+//font size classes
+.f1 {
+	@include font-size(6.56em, 32px, false);
+}
+.f2 {
+	@include font-size(4.1em, 28px, false);
+}
+.f3 {
+	@include font-size(2.56em, 24px, false);
+}
+.f4 {
+	@include font-size(1.6em, 22px, false);
+}
+.f5 {
+	@include font-size(1.4em, 20px, false);
+}
+.f6 {
+	@include font-size(1.125em, 18px, false);
+}
+.f {
+	@include font-size(1em, 16px, false);
+}
+.f7 {
+	@include font-size(.9em, 14px, false);
+}
+.f8 {
+	@include font-size(.8em, 13px, false);
+}
+.f9 {
+	@include font-size(.75em, 12px, false);
+}
+
+// base x6.56 - 104.96px
 h1 {
 	color: $color-text-black;
 	font-family: $font-stack;
 	font-weight: $font-weight-extralight;
-	margin-bottom: 0;
+	line-height: .9;
+	margin-bottom: .37em;
 }
 
-// base x4.1
+// base x4.1 - 65.6px
 h2 {
 	color: $color-text-black;
 	font-family: $font-stack;
 	font-weight: $font-weight-extralight;
-	line-height: 90%;
-	margin-bottom: 0;
+	line-height: .96;
+	margin-bottom: .48em;
 }
 
 
-// base x2.56
+// base x2.56 - 40.96px
 h3 {
 	color: $color-text-black;
 	font-family: $font-stack;
 	font-weight: $font-weight-light;
-	margin-bottom: 0;
+	line-height: 1.16;
+	margin-bottom: .58em;
 }
 
 
-// base x1.6
+// base x1.6 - 28.8px
 h4 {
 	color: $color-text-black;
 	font-family: $font-stack;
 	font-weight: $font-weight-light;
-	margin-bottom: 0;
+	line-height: 1.25;
+	margin-bottom: .59em;
 }
 
-// base x1.4
+// base x1.4 - 22.4px
 h5 {
 	color: $color-text-black;
 	font-family: $font-stack;
 	font-weight: $font-weight-regular;
-	line-height: 120%;
-	margin-bottom: 10px;
-	// margin-bottom: .625em;
+	line-height: 1.07;
+	margin-bottom: .36em;
 }
 
-// base x1.125
+// base x1.125 - 18px
 h6 {
 	color: $color-text-black;
 	font-family: $font-stack;
 	font-weight: $font-weight-semibold;
-	margin-bottom: 6px;
-	// margin-bottom: .375em;
+	line-height: 1.333;
+	margin-bottom: .44em;
 }
 
-// base
+// base - 16px
 p {
 	color: $color-text-black;
 	font-family: $font-stack;
 	font-weight: $font-weight-regular;
-	line-height: 1.5em;
-	margin-bottom: 10px;
-	// margin-bottom: .625em;
+	line-height: 1.5;
+	margin-bottom: .5em;
 }
 
-// base x.9
+// base x.9 - 14.4px
 p.h7 {
 	font-weight: $font-weight-semibold;
-	//line-height: 0em;
-	margin-bottom: 0;
+	line-height: 1.11;
+	margin-bottom: .54em;
 }
 
-// base x.8
+// base x.8 - 12.8px
 p.h8 {
 	font-weight: $font-weight-semibold;
-	//line-height: 0em;
-	margin-bottom: 0;
+	line-height: 1.25;
+	margin-bottom: .62em;
 }
 
-// base x.75
+// base x.75 - 12px
 p.h9 {
 	font-weight: $font-weight-semibold;
-	//line-height: 0em;
-	margin-bottom: 12px;
-	// margin-bottom: .75em;
+	line-height: 1.333;
+	margin-bottom: .65em;
 }
 
 // smallcaps
@@ -129,8 +169,8 @@ p.smallcaps {
 	color: $color-text-black;
 	font-weight: $font-weight-semibold;
 	letter-spacing: .09em;
-	//line-height: 0em;
-	margin-bottom: 0;
+	line-height: 1.1;
+	margin-bottom: .5em;
 	opacity: .5;
 	text-transform: uppercase;
 }
