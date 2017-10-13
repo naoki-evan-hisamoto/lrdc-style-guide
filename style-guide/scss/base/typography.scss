@@ -42,10 +42,7 @@ $font-weight-semibold: 600;
 body {
 	font-size: $font-base;
 }
-//temp
-h1,h2,h3,h4,h5,h6,p {
-	background-color: #3FFFFF;
-}
+
 //font size classes
 .f1 {
 	@include font-size(6.56em, 32px, false);
