@@ -5,7 +5,7 @@
 }
 
 .dropdown {
-	background: url(/images/CTA-arrow.svg) no-repeat 90%;
+	background: url(/images/CTA-arrow.svg) no-repeat 95%;
 	overflow: hidden;
 }
 
@@ -20,8 +20,8 @@
 	line-height: 1.5;
 	font-weight: $font-weight-regular;
 	min-width: auto;
-	@include padding($small, 5px);
-	width: 95%;
+	padding: .2em;
+	width: 100%;
 }
 
 .field-label {
@@ -33,6 +33,21 @@
 
 .color-secondary .dropdown select {
 	color: #fff;
-	background: url(/images/CTA-arrow-white.svg) no-repeat 90%;
+	background: url(/images/CTA-arrow-white.svg);
 	overflow: hidden;
+}
+.dropdown select:focus {
+	outline: none;
+}
+
+
+
+
+
+.form .dropdown {
+	box-shadow: $elevation-level1;
+	& select { 
+		border: none;
+		@include padding($small, 5px);
+	}
 }
