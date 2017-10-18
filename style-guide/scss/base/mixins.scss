@@ -1,0 +1,124 @@
+  $base-unitless: $base / ($base - $base + 1);
+
+// OBJECT WIDTH MIXIN
+@mixin width($width, $min, $max: false, $fallback: false) {
+  $width-unitless: $width / ($width - $width + 1);
+  $min-breakpoint: ($min / $width-unitless) / ($base-unitless / 100);
+  $max-breakpoint: ($max / $width-unitless) / ($base-unitless /100);
+ 
+  @media (max-width: #{$min-breakpoint}) {
+      width: $min;
+    }
+
+  @if $max {
+    @media (min-width: #{$max-breakpoint}) {
+      width: $max;
+    }
+  }
+
+  @if $fallback {
+    width: $fallback;
+  }
+
+  width: $width;
+}
+
+// OBJECT HEIGHT MIXIN
+@mixin height($height, $min, $max: false, $fallback: false) {
+  $height-unitless: $height / ($height - $height + 1);
+  $min-breakpoint: ($min / $height-unitless) / ($base-unitless / 100);
+  $max-breakpoint: ($max / $height-unitless) / ($base-unitless /100);
+
+  @media (max-width: #{$min-breakpoint}) {
+      height: $min;
+    }
+
+  @if $max {
+    @media (min-width: #{$max-breakpoint}) {
+      height: $max;
+    }
+  }
+
+  @if $fallback {
+    height: $fallback;
+  }
+
+  height: $height;
+}
+
+// FONT SIZE MIXIN
+@mixin font-size($size, $min, $max: false, $fallback: false) {
+  //strip units from font-base & font-size
+  $size-unitless: $size / ($size - $size + 1);
+  //calculate min and max breakpoints
+  $min-breakpoint: ($min / $size-unitless) / ($base-unitless / 100);
+  $max-breakpoint: ($max / $size-unitless) / ($base-unitless /100);
+    //set max media width for scaling 
+  @media (max-width: #{$min-breakpoint}) {
+      font-size: $min;
+    }
+    //set min media width if max font size is defined
+  @if $max {
+    @media (min-width: #{$max-breakpoint}) {
+      font-size: $max;
+    }
+  }
+    //call fallback if defined
+  @if $fallback {
+    font-size: $fallback;
+  }
+    //default font size
+  font-size: $size;
+}
+
+//set base font size
+body {
+  font-size: $base;
+}
+
+// PADDING MIXIN
+@mixin padding($padding, $min, $max: false, $fallback: false) {
+  $padding-unitless: $padding / ($padding - $padding + 1);
+  $min-breakpoint: ($min / $padding-unitless) / ($base-unitless / 100);
+  $max-breakpoint: ($max / $padding-unitless) / ($base-unitless /100);
+ 
+  @media (max-width: #{$min-breakpoint}) {
+      padding: $min;
+    }
+
+  @if $max {
+    @media (min-width: #{$max-breakpoint}) {
+      padding: $max;
+    }
+  }
+
+  @if $fallback {
+    padding: $fallback;
+  }
+
+  padding: $padding;
+}
+
+// MARGIN MIXIN
+
+@mixin margin($margin, $min, $max: false, $fallback: false) {
+  $margin-unitless: $margin / ($margin - $margin + 1);
+  $min-breakpoint: ($min / $margin-unitless) / ($base-unitless / 100);
+  $max-breakpoint: ($max / $margin-unitless) / ($base-unitless /100);
+ 
+  @media (max-width: #{$min-breakpoint}) {
+      margin: $min;
+    }
+
+  @if $max {
+    @media (min-width: #{$max-breakpoint}) {
+      margin: $max;
+    }
+  }
+
+  @if $fallback {
+    margin: $fallback;
+  }
+
+  margin: $margin;
+}

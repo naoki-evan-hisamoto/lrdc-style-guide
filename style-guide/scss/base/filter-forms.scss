@@ -1,0 +1,53 @@
+.dropdown-control {
+	@include margin($standard, 15px);
+	position: relative;
+	width: 300px;
+}
+
+.dropdown {
+	background: url(/images/CTA-arrow.svg) no-repeat 95%;
+	overflow: hidden;
+}
+
+.dropdown select{
+	-webkit-appearance: none;
+	background: transparent;
+	border: 1px solid $color-element-base;
+	border-radius: 4px;
+	color: $color-text-black;
+	font-family: $font-stack;
+	@include font-size(1em, 16px, false);
+	line-height: 1.5;
+	font-weight: $font-weight-regular;
+	min-width: auto;
+	padding: .2em;
+	width: 100%;
+}
+
+.field-label {
+	color: $color-primary;
+	left: .8em;
+	top: 0;
+	position: absolute;
+}
+
+.color-secondary .dropdown select {
+	color: #fff;
+	background: url(/images/CTA-arrow-white.svg);
+	overflow: hidden;
+}
+.dropdown select:focus {
+	outline: none;
+}
+
+
+
+
+
+.form .dropdown {
+	box-shadow: $elevation-level1;
+	& select { 
+		border: none;
+		@include padding($small, 5px);
+	}
+}

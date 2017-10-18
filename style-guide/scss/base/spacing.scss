@@ -1,0 +1,21 @@
+$small: .5em;
+$small-horizontal: 0 .5em;
+$small-vertical: .5em 0;
+
+$standard: 1em;
+$standard-horizontal: 0 1em;
+$standard-vertical: 1em 0;
+
+$large: 3em;
+$large-horizontal: 0 3em;
+$large-vertical: 3em 0;
+
+$section: 5em 0 6em;
+
+/*
+@if $margin == "0 .5em;" {
+	$margin-unitless: .5;
+}
+@else {
+	$padding-unitless: $padding / ($padding - $padding + 1);
+}*/

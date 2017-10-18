@@ -1,0 +1,109 @@
+//CARDS
+.card {
+  border-radius: 4px;
+  box-shadow: $elevation-level2;
+  @include margin($small, 10px);
+  transform: translateY(0px), scale(1);
+  transition: all .2s;
+  width: 100%;
+}
+
+.card:hover {
+  box-shadow: $elevation-level3;
+  cursor: pointer;
+  transform: scale(1.02) translateY(-2px);
+  transition: all .2s;
+  & .card-text .card-title {
+    & p {
+      transform: translateX(0px);
+      transition: all .2s;
+    }
+    & svg {
+      display: block;
+      opacity: 1;
+      transform: translateX(0px);
+      transition: all .2s;
+    }
+  }
+}
+
+.card:active {
+  box-shadow: $elevation-level2;
+  transform: scale(1) translateY(0px);
+  transition: all .1s; 
+}
+.card-link {
+  display: flex;
+  height: 216px;
+}
+.card-image {
+  border-radius: 4px 4px 0px 0px;
+  background-color: #c4c4c4;
+  height: 216px;
+  width: 100%;
+  overflow: hidden;
+  & img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.card-text {
+  margin: 0;
+  padding: 1.5em 1.5em 2em 1.5em;
+}
+
+.card-text .card-title {
+  align-items: baseline;
+  //display: flex;
+  justify-content: center;
+  transition: all .2s;
+  & p {
+  transform: translateX(.9em);
+  transition: all .2s;
+  }
+}
+.card-title svg{
+  @include height(1em, 15px);
+  margin-bottom: .5em;
+  margin-left: 1em;
+  opacity: 0;
+  transform: translateX(-5px);
+  transition: all .2s;
+}
+.round-card .card-link .card-image {
+  border-radius: 50%;
+  height: 144px;
+  margin: auto;
+  transition: all .2s;
+  width: 144px;
+}
+.round-card:hover .card-link .card-image {
+  height: 154px;
+  margin: auto;
+  transition: all .2s;
+  width: 154px;
+}
+
+//DIVIDER
+.divider {
+  border-radius: 4px;
+  box-shadow: $elevation-level2;
+  @include width(50%, 300px);
+  @include margin($small, 10px);
+}
+
+.divider-text {
+    @include padding($standard, 15px);
+}
+
+.divider-image {
+  width: 3%;
+  & img {
+    border-radius: 4px 0px 0px 4px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+}
