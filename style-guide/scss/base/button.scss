@@ -1,0 +1,35 @@
+.button {
+  background-color: $color-primary;
+  border-radius: 4px;
+  box-shadow: $elevation-button;
+  color: #fff;
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.button:hover, #hover {
+  animation: bounce 1.5s ease-in-out infinite alternate;
+  background-color: lighten($color-primary, 16%);
+  transition: all .1s;
+}
+
+@keyframes bounce {
+  0% {transform: translateY(0px);
+      box-shadow: 0 .125em .25em 0em RGBA(0, 0, 0, .2);}
+  50% {transform: translateY(-2px);
+      box-shadow: 0 .25em .5em 0em RGBA(0, 0, 0, .2);}
+  100% {transform: translateY(0px);
+      box-shadow: 0 .125em .25em 0em RGBA(0, 0, 0, .2);}
+}
+
+.button:active, #active {
+  animation: none;
+  background-color: darken($color-primary, 16%);
+  box-shadow: 0 .125em .25em 0em RGBA(0, 0, 0, .2);
+  transform: translateY(0px);
+  transition: all .1s;
+}

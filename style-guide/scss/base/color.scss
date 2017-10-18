@@ -6,3 +6,21 @@ $color-element-light: #f7f8f9;
 $color-shadow-main: RGBA(76, 76, 76, .32);
 $color-shadow-blur: RGBA(76, 76, 76, .04);
 $color-text-black: #4c4c4c;
+$color-primary: #1c75b9;
+$color-secondary: #F5984C;
+
+.color-text-black {
+	background-color: $color-text-black;
+}
+.color-element-base {
+	background-color: $color-element-base;
+}
+.color-element-dark {
+	background-color: $color-element-dark;
+}
+.color-element-light {
+	background-color: $color-element-light;
+}
+.color-primary {
+	background-color: $color-primary;
+}

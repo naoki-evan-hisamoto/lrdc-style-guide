@@ -1,47 +1,10 @@
-//reset browser
-* {
-	margin: 0;
-	padding: 0;
-}
 // typography
 
-$font-base: 1.2vw;
 $font-stack: 'Source Sans Pro', sans-serif;
 $font-weight-extralight: 200;
 $font-weight-light: 300;
 $font-weight-regular: 400;
 $font-weight-semibold: 600;
-
-// FONT SIZE MIXIN
-@mixin font-size($size, $min, $max: false, $fallback: false) {
-	//strip units from font-base & font-size
-  $font-size-unitless: $font-base / ($font-base - $font-base + 1);
-  $size-unitless: $size / ($size - $size + 1);
-	//calculate min and max breakpoints
-  $min-breakpoint: ($min / $size-unitless) / ($font-size-unitless / 100);
-  $max-breakpoint: ($max / $size-unitless) / ($font-size-unitless /100);
-  	//set max media width for scaling 
-  @media (max-width: #{$min-breakpoint}) {
-      font-size: $min;
-    }
-  	//set min media width if max font size is defined
-  @if $max {
-    @media (min-width: #{$max-breakpoint}) {
-      font-size: $max;
-    }
-  }
-  	//call fallback if defined
-  @if $fallback {
-    font-size: $fallback;
-  }
-  	//default font size
-  font-size: $size;
-}
-
-//set base font size
-body {
-	font-size: $font-base;
-}
 
 //font size classes
 .f1 {
@@ -73,6 +36,11 @@ body {
 }
 .f9 {
 	@include font-size(.75em, 12px, false);
+}
+.fbutton {
+	color: #fff;
+	margin: 0;
+	padding: .75em 1.5em;
 }
 
 // base x6.56 - 104.96px

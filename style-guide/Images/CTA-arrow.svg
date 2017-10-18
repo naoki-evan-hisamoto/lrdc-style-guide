@@ -1,0 +1,16 @@
+<svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>CTA-arrow</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(2200 -388)">
+<g id="icon/element/CTA-arrow">
+<g id="icon-element-CTA-arrow">
+<g id="icon-element-CTA-arrow">
+<use xlink:href="#path0_stroke" transform="matrix(-1.83697e-16 1 -1 -1.83697e-16 -2182 398)" fill="#4C4C4C"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_stroke" d="M -0.707107 11.2929C -1.09763 11.6834 -1.09763 12.3166 -0.707107 12.7071C -0.316583 13.0976 0.316583 13.0976 0.707107 12.7071L -0.707107 11.2929ZM 6 6L 6.70711 6.70711C 7.09763 6.31658 7.09763 5.68342 6.70711 5.29289L 6 6ZM 0.707107 -0.707107C 0.316583 -1.09763 -0.316583 -1.09763 -0.707107 -0.707107C -1.09763 -0.316583 -1.09763 0.316583 -0.707107 0.707107L 0.707107 -0.707107ZM 0.707107 12.7071L 6.70711 6.70711L 5.29289 5.29289L -0.707107 11.2929L 0.707107 12.7071ZM 6.70711 5.29289L 0.707107 -0.707107L -0.707107 0.707107L 5.29289 6.70711L 6.70711 5.29289Z"/>
+</defs>
+</svg>
