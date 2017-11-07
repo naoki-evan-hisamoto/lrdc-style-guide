@@ -1,9 +1,32 @@
+// elevation
+
 $elevation-base: 0 0 0 0 $color-shadow-blur, 0 0 0 0 $color-shadow-main;
-$elevation-level1: 0 0 1.75em 0 $color-shadow-blur, 0 .875em .625em -1em $color-shadow-main;
-$elevation-level2: 0 0 2em 0 $color-shadow-blur, 0 1em .75em -1em $color-shadow-main;
-$elevation-level3: 0 0 2.5em 0 $color-shadow-blur, 0 1.25em 1em -1em $color-shadow-main;
-$elevation-level4: 0 0 3.5em 0 $color-shadow-blur, 0 1.75em 1.5em -1em $color-shadow-main;
-$elevation-level5: 0 0 5.5em 0 $color-shadow-blur, 0 2.75em 2.5em -1em $color-shadow-main;
+$elevation-level1: 0 0 1.75em 0 $color-shadow-blur, 0 .75em .75em -1em $color-shadow-main;
+$elevation-level2: 0 0 2em 0 $color-shadow-blur, 0 1em 1em -1em $color-shadow-main;
+$elevation-level3: 0 0 2.25em 0 $color-shadow-blur, 0 1.25em 1.25em -1em $color-shadow-main;
+$elevation-level4: 0 0 2.5em 0 $color-shadow-blur, 0 1.5em 1.5em -1em $color-shadow-main;
+$elevation-level5: 0 0 2.75em 0 $color-shadow-blur, 0 1.75em 1.75em -1em $color-shadow-main;
+
+$button-elevation-base: 0 0 0 0 $color-shadow-blur-button, 0 0 0 0 $color-shadow-main-button;
+$button-elevation-level1: 0 0 .625em 0 $color-shadow-blur-button, 0 .25em .5em -.375em $color-shadow-main-button;
+$button-elevation-level2: 0 0 .75em 0 $color-shadow-blur-button, 0 .375em .625em -.375em $color-shadow-main-button;
+$button-elevation-level3: 0 0 .875em 0 $color-shadow-blur-button, 0 .5em .75em -.375em $color-shadow-main-button;
+$button-elevation-level4: 0 0 1em 0 $color-shadow-blur-button, 0 .625em .875em -.375em $color-shadow-main-button;
+$button-elevation-level5: 0 0 1.125em 0 $color-shadow-blur-button, 0 .75em 1em -.375em $color-shadow-main-button;
+/*
+$button-white-elevation-base: 0 0 0 0 $color-shadow-blur-button, 0 0 0 0 $color-shadow-main-button;
+$button-white-elevation-level1: 0 0 .625em 0 $color-shadow-blur-button, 0 .25em .5em -.375em $color-shadow-main-button;
+$button-white-elevation-level2: 0 0 .75em 0 $color-shadow-blur-button, 0 .375em .625em -.375em $color-shadow-main-button;
+$button-white-elevation-level3: 0 0 .875em 0 $color-shadow-blur-button, 0 .5em .75em -.375em $color-shadow-main-button;
+$button-white-elevation-level4: 0 0 1em 0 $color-shadow-blur-button, 0 .625em .875em -.375em $color-shadow-main-button;
+$button-white-elevation-level5: 0 0 1.125em 0 $color-shadow-blur-button, 0 .75em 1em -.375em $color-shadow-main-button;
+*/
+$card-elevation-base: 0 0 0 0 $color-shadow-blur-card, 0 0 0 0 $color-shadow-main-card;
+$card-elevation-level1: 0 0 1.75em 0 $color-shadow-blur-card, 0 .75em .75em -1em $color-shadow-main-card;
+$card-elevation-level2: 0 0 2em 0 $color-shadow-blur-card, 0 1em 1em -1em $color-shadow-main-card;
+$card-elevation-level3: 0 0 2.25em 0 $color-shadow-blur-card, 0 1.25em 1.25em -1em $color-shadow-main-card;
+$card-elevation-level4: 0 0 2.5em 0 $color-shadow-blur-card, 0 1.5em 1.5em -1em $color-shadow-main-card;
+$card-elevation-level5: 0 0 2.75em 0 $color-shadow-blur-card, 0 1.75em 1.75em -1em $color-shadow-main-card;
 
 .elevation-base {
 	box-shadow: $elevation-base;
@@ -28,3 +51,29 @@ $elevation-level5: 0 0 5.5em 0 $color-shadow-blur, 0 2.75em 2.5em -1em $color-sh
 .elevation-level5 {
 	box-shadow: $elevation-level5;
 }
+
+/*
+.button-elevation-base {
+	box-shadow: $button-elevation-base;
+}
+
+.button-elevation-level1 {
+	box-shadow: $button-elevation-level1;
+}
+
+.button-elevation-level2 {
+	box-shadow: $button-elevation-level2;
+}
+
+.button-elevation-level3 {
+	box-shadow: $button-elevation-level3;
+}
+
+.button-elevation-level4 {
+	box-shadow: $button-elevation-level4;
+}
+
+.button-elevation-level5 {
+	box-shadow: $button-elevation-level5;
+}
+*/

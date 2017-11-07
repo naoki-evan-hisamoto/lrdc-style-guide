@@ -1,8 +1,12 @@
+* {
+	box-sizing: border-box;
+}
+
+@import 'base/space';
 @import 'base/color';
 @import 'base/typography';
 @import 'base/elevation';
-
-div {
-	height: 100px;
-	width: 100px;
-}
+@import 'base/container';
+@import 'base/transform';
+@import 'base/buttons';
+@import 'base/cards';

@@ -1,0 +1,29 @@
+.card {
+	box-shadow: $card-elevation-level2;
+	height: auto;
+	margin: $small $small 5em $small;
+	transform: $return;
+	transition: all .2s;
+	width: 100%;
+	&:hover {
+		box-shadow: $card-elevation-level3;
+		transform: $hover;
+		transition: all .2s;
+	}
+	&:active {
+		box-shadow: $card-elevation-level2;
+		transform: $return;
+		transition: all .1s; 
+	}
+}
+
+.card-image {
+	background-color: #c4c4c4;
+	height: 216px;
+	width: 100%;
+}
+
+.card-text {
+	padding: 1.5em 1.5em 2em 1.5em;
+	margin: 0em;
+}

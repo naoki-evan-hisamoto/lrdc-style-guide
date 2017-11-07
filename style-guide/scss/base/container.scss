@@ -1,0 +1,72 @@
+// container
+
+.main-container {
+	//border: 2px solid orange;
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 auto 24px auto;
+	max-width: 1200px;
+}
+
+.sub-container {
+	//border: 2px solid red;
+	box-sizing: border-box;
+	margin: 8px;
+	padding: 48px 16px;
+	min-width: 100px;
+	text-align: center;
+	width: 100%;
+}
+
+.thirds-container {
+	//border: 2px solid blue;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.halves-container {
+	//border: 2px solid blue;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+#bg-color {
+	background-color: $color-primary;
+}
+
+/* Page Breaks*/
+
+@media (max-width: 300px) {
+	.fourths-container {width: 100%}
+	.fifths-container {width: 100%}
+	.eighths-container {width: 50%}
+	.thirds-container {width: 100%}
+	.halves-container {width: 100%}
+}
+@media (min-width: 768px) {
+	.fourths-container {width: 50%}
+	.fifths-container {width: 20%}
+	.eighths-container {width: 25%}
+	.thirds-container {width:33.333%}
+	.halves-container {width: 50%}
+}
+@media (min-width: 1200px) {
+	.fourths-container {width: 25%}
+	.fifths-container {width: 20%}
+	.eighths-container {width: 12.5%}
+	.thirds-container {width: 33.333%}
+	.halves-container {width: 50%}
+}
+
+body, div {
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	-webkit-font-smoothing: subpixel-antialiased;
+	-webkit-perspective: 1000;
+}

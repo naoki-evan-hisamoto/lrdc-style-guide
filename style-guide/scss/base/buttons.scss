@@ -1,0 +1,61 @@
+a {
+	display: inline-block;
+}
+
+.button {
+	background-color: $color-primary;
+	border-radius: 4px;
+	box-shadow: $button-elevation-level2;
+	cursor: pointer;
+	font-size: 1em;
+	text-decoration: none;
+	transition: all .2s;
+	&:hover {
+		//animation: bounce 3s ease-in-out infinite alternate;
+		background-color: lighten($color-primary, 16%);
+		box-shadow: $button-elevation-level3;
+		transform: $hover;
+		transition: all .2s;
+	}
+	&:active {
+		background-color: lighten($color-primary, 8%);
+		box-shadow: $button-elevation-level2;
+		transform: $return;
+		transition: all .1s;
+	}
+	&:disabled {
+		background-color: $color-element-light;
+		box-shadow: $button-elevation-base;
+		color: $color-text-gray;
+		transition: all .1s;
+	}
+}
+
+.button-white {
+		background-color: $color-text-white;
+		border-radius: 4px;
+		box-shadow: $button-elevation-level2;
+		cursor: pointer;
+		font-size: 1em;
+		text-decoration: none;
+		transition: all .2s;
+	&:hover {
+		//animation: bounce 3s ease-in-out infinite alternate;
+		background-color: $color-text-white;
+		box-shadow: $button-elevation-level3;
+		transform: $hover;
+		transition: all .2s;
+	}
+	&:active {
+		background-color: $color-text-white;
+		box-shadow: $button-elevation-level2;
+		transform: $return;
+		transition: all .1s;
+	}
+	&:disabled {
+		background-color: $color-element-light;
+		box-shadow: $button-elevation-base;
+		color: $color-text-gray;
+		transition: all .1s;
+	}
+}
