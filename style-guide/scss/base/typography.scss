@@ -66,18 +66,6 @@ h6 {
 	font-weight: $font-weight-semibold;
 	margin-bottom: 6px;
 	// margin-bottom: .375em;
-	&.button-text {
-		color: $color-text-white;
-		margin: 0;
-		padding: .5em 2em;
-  		text-align: center;
-	}
-	&.button-white-text {
-		color: $color-text-black;
-		margin: 0;
-		padding: .5em 2em;
-  		text-align: center;
-	}
 }
 
 // base

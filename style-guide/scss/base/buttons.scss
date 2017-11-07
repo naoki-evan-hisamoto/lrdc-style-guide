@@ -6,8 +6,13 @@ a {
 	background-color: $color-primary;
 	border-radius: 4px;
 	box-shadow: $button-elevation-level2;
+	color: $color-text-white;
 	cursor: pointer;
-	font-size: 1em;
+	font-family: $font-stack;
+	font-size: 1.125em;
+	font-weight: $font-weight-semibold;
+	padding: .5em 2em;
+	text-align: center;
 	text-decoration: none;
 	transition: all .2s;
 	&:hover {
@@ -32,23 +37,30 @@ a {
 }
 
 .button-white {
-		background-color: $color-text-white;
-		border-radius: 4px;
-		box-shadow: $button-elevation-level2;
-		cursor: pointer;
-		font-size: 1em;
-		text-decoration: none;
-		transition: all .2s;
+	background-color: $color-text-white;
+	border-radius: 4px;
+	box-shadow: $button-elevation-level2;
+	color: $color-text-black;
+	cursor: pointer;
+	font-family: $font-stack;
+	font-size: 1.125em;
+	font-weight: $font-weight-semibold;
+	padding: .5em 2em;
+	text-align: center;
+	text-decoration: none;
+	transition: all .2s;
 	&:hover {
 		//animation: bounce 3s ease-in-out infinite alternate;
 		background-color: $color-text-white;
 		box-shadow: $button-elevation-level3;
+		color: lighten($color-text-black, 16%);
 		transform: $hover;
 		transition: all .2s;
 	}
 	&:active {
 		background-color: $color-text-white;
 		box-shadow: $button-elevation-level2;
+		color: lighten($color-text-black, 8%);
 		transform: $return;
 		transition: all .1s;
 	}
