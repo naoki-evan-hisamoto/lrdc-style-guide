@@ -9,9 +9,9 @@ a {
 	color: $color-text-white;
 	cursor: pointer;
 	font-family: $font-stack;
-	font-size: 1.125em;
-	font-weight: $font-weight-semibold;
-	padding: .5em 2em;
+	font-size: 1em;
+	font-weight: $font-weight-regular;
+	padding: .5em 1.5em;
 	text-align: center;
 	text-decoration: none;
 	transition: all .2s;
@@ -43,9 +43,9 @@ a {
 	color: $color-text-black;
 	cursor: pointer;
 	font-family: $font-stack;
-	font-size: 1.125em;
-	font-weight: $font-weight-semibold;
-	padding: .5em 2em;
+	font-size: 1em;
+	font-weight: $font-weight-regular;
+	padding: .5em 1.5em;
 	text-align: center;
 	text-decoration: none;
 	transition: all .2s;
