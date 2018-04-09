@@ -74,7 +74,8 @@ NPM is a package manager for JavaScript and the world's largest software registr
 </br>
 
   1. Enter `brew install node` into a Terminal prompt.
-  2. To check the install, enter `node -v; npm -v`. You should see two numbers print out which are the versions for node and npm respectively.   
+  2. Enter `npm install npm@latest -g` into a Terminal prompt.
+  3. To check the install, enter `node -v; npm -v`. You should see two numbers print out which are the versions for node and npm respectively.   
 
 </br>
 
